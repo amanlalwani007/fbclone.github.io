@@ -1,0 +1,70 @@
+[debug] [2021-02-21T05:04:40.355Z] ----------------------------------------------------------------------
+[debug] [2021-02-21T05:04:40.362Z] Command:       /home/aman/Downloads/node-v14.15.4-linux-x64/bin/node /home/aman/Downloads/node-v14.15.4-linux-x64/bin/firebase deploy
+[debug] [2021-02-21T05:04:40.364Z] CLI Version:   9.4.0
+[debug] [2021-02-21T05:04:40.364Z] Platform:      linux
+[debug] [2021-02-21T05:04:40.364Z] Node Version:  v14.15.4
+[debug] [2021-02-21T05:04:40.432Z] Time:          Sun Feb 21 2021 10:34:40 GMT+0530 (India Standard Time)
+[debug] [2021-02-21T05:04:40.433Z] ----------------------------------------------------------------------
+[debug] [2021-02-21T05:04:40.434Z] 
+[debug] [2021-02-21T05:04:40.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-21T05:04:40.471Z] > authorizing via signed-in user
+[debug] [2021-02-21T05:04:40.472Z] [iam] checking project facebook-clone-61274 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-21T05:04:40.479Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-21T05:04:40.480Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-21T05:04:41.153Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sun, 21 Feb 2021 05:04:41 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-21T05:04:41.266Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-clone-61274:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-21T05:04:44.417Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 21 Feb 2021 05:04:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1417","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-21T05:04:44.423Z] > refreshing access token with scopes: []
+[debug] [2021-02-21T05:04:44.423Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-21T05:04:44.931Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 21 Feb 2021 05:04:44 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-21T05:04:44.978Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/facebook-clone-61274 [none]
+[debug] [2021-02-21T05:04:45.648Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/facebook-clone-61274 200
+[debug] [2021-02-21T05:04:45.649Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/facebook-clone-61274 {"projectId":"facebook-clone-61274","projectNumber":"321498900202","displayName":"facebook-clone","name":"projects/facebook-clone-61274","resources":{"hostingSite":"facebook-clone-61274","realtimeDatabaseInstance":"facebook-clone-61274-default-rtdb","storageBucket":"facebook-clone-61274.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'facebook-clone-61274'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-02-21T05:04:45.666Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-21T05:04:45.666Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-21T05:04:46.157Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 21 Feb 2021 05:04:46 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-21T05:04:46.203Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/facebook-clone-61274/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-02-21T05:06:56.938Z] Error: connect ETIMEDOUT 172.217.166.234:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.166.234:443
+[debug] [2021-02-21T05:07:43.357Z] ----------------------------------------------------------------------
+[debug] [2021-02-21T05:07:43.359Z] Command:       /home/aman/Downloads/node-v14.15.4-linux-x64/bin/node /home/aman/Downloads/node-v14.15.4-linux-x64/bin/firebase deploy
+[debug] [2021-02-21T05:07:43.359Z] CLI Version:   9.4.0
+[debug] [2021-02-21T05:07:43.359Z] Platform:      linux
+[debug] [2021-02-21T05:07:43.359Z] Node Version:  v14.15.4
+[debug] [2021-02-21T05:07:43.359Z] Time:          Sun Feb 21 2021 10:37:43 GMT+0530 (India Standard Time)
+[debug] [2021-02-21T05:07:43.359Z] ----------------------------------------------------------------------
+[debug] [2021-02-21T05:07:43.359Z] 
+[debug] [2021-02-21T05:07:43.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-21T05:07:43.364Z] > authorizing via signed-in user
+[debug] [2021-02-21T05:07:43.364Z] [iam] checking project facebook-clone-61274 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-21T05:07:43.365Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-clone-61274:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-21T05:07:45.263Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 21 Feb 2021 05:07:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1327","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-21T05:07:45.271Z] > refreshing access token with scopes: []
+[debug] [2021-02-21T05:07:45.272Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-21T05:07:45.969Z] <<< HTTP RESPONSE 200 {"date":"Sun, 21 Feb 2021 05:07:45 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-21T05:07:46.046Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/facebook-clone-61274 [none]
+[debug] [2021-02-21T05:08:16.066Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/facebook-clone-61274
+[debug] [2021-02-21T05:08:16.071Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/facebook-clone-61274
+    at Client.doRequest (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/apiv2.js:209:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/management/projects.js:289:21)
+    at async Object.getDefaultHostingSite (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/requireHostingSite.js:9:18)
+    at async Object.fn (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/commands/deploy.js:66:9)
+    at async /home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project facebook-clone-61274. Please make sure the project exists and your account has permission to access it.
