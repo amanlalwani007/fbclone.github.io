@@ -68,3 +68,43 @@
     at async /home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/command.js:161:17
 [error] 
 [error] Error: Failed to get Firebase project facebook-clone-61274. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-02-21T05:17:53.059Z] ----------------------------------------------------------------------
+[debug] [2021-02-21T05:17:53.060Z] Command:       /home/aman/Downloads/node-v14.15.4-linux-x64/bin/node /home/aman/Downloads/node-v14.15.4-linux-x64/bin/firebase deploy
+[debug] [2021-02-21T05:17:53.061Z] CLI Version:   9.4.0
+[debug] [2021-02-21T05:17:53.061Z] Platform:      linux
+[debug] [2021-02-21T05:17:53.061Z] Node Version:  v14.15.4
+[debug] [2021-02-21T05:17:53.061Z] Time:          Sun Feb 21 2021 10:47:53 GMT+0530 (India Standard Time)
+[debug] [2021-02-21T05:17:53.061Z] ----------------------------------------------------------------------
+[debug] [2021-02-21T05:17:53.061Z] 
+[debug] [2021-02-21T05:17:53.065Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-21T05:17:53.066Z] > authorizing via signed-in user
+[debug] [2021-02-21T05:17:53.066Z] [iam] checking project facebook-clone-61274 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-21T05:17:53.067Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-21T05:17:53.067Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-21T05:17:53.733Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 21 Feb 2021 05:17:53 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-21T05:17:53.803Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-clone-61274:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-21T05:18:10.571Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 21 Feb 2021 05:18:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1343","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-21T05:18:10.578Z] > refreshing access token with scopes: []
+[debug] [2021-02-21T05:18:10.579Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-21T05:20:21.801Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-02-21T05:20:21.805Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/auth.js:26:12)
+    at refreshTokens (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/auth.js:297:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.getAccessToken (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/apiv2.js:144:23)
+    at async Client.addAuthHeader (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/apiv2.js:135:21)
+    at async Client.request (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/apiv2.js:93:34)
+    at async Object.getFirebaseProject (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/management/projects.js:289:21)
+    at async Object.getDefaultHostingSite (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/requireHostingSite.js:9:18)
+    at async Object.fn (/home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/commands/deploy.js:66:9)
+    at async /home/aman/Downloads/node-v14.15.4-linux-x64/lib/node_modules/firebase-tools/lib/command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project facebook-clone-61274. Please make sure the project exists and your account has permission to access it.
